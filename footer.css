@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+.contenedor{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+}
+
+.seccion{
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 20%;
+    border-right: solid;
+    border-color: rgb(37, 37, 37);
+    border-width: 0.5px;
+}
+
+.centrar{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.img{
+    border-radius: 100%;
+    height: 50%;
+    width: 35%;
+}
+
+.integrantesInfo{
+    position: relative;
+    left: 0;
+}
+
+.integrantesInfo li{
+    margin: 10%;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.centrarVertical{
+    flex-direction: column;
+}
+
+.buttons{
+    margin: 10px;
+    font-size: 35px;
+    color: #edf0f1;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    border: solid;
+    border-radius: 10px;
+    border-color:  #edf0f1;
+    padding: 10px;
+    background-color: #000;
+}
+
+.buttons:hover{
+    color: #000;
+    cursor: pointer;
+    background-color:#edf0f1;
+    transition-duration: 0.3s;
+}
+
+.andres {
+    position: absolute;
+    bottom: 0;
+    margin: 10px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #edf0f1;
+}

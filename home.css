@@ -1,0 +1,14 @@
+ .iframeNavbar{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+}
+
+.iframeFooter{
+    height: 200px;
+    width: 100%;
+}
+
+body{
+    margin-top: 150px;
+}

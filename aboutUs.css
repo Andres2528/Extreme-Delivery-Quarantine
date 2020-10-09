@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.iframeNavbar{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+}
+
+.iframeFooter{
+    height: 200px;
+    width: 100%;
+}
+
+body{
+    margin-top: 100px;
+}
+
+.centrar{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedor{
+    width: 100%;
+    background-color: rgb(27, 27, 27);
+    height: 100%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+}
+
+.tarjetas{
+    width: 80%;
+    background-color: rgb(27, 27, 27);
+    height: 100%;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+
+.seccion{
+    width: 30%;
+    height: 70%;
+    margin: 10%;
+    background-color: #000;
+    border: solid;
+    border-color: #000;
+}
+
+.fotos{  
+    margin-bottom: 10%;  
+    margin-top: 5%;
+    width: 55%;
+    height: 60%;
+    border-radius: 100%;
+}
+
+.nombre{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #edf0f1;
+    text-decoration: none;
+}
