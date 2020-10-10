@@ -1,32 +1,39 @@
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="aboutUs.css">
+    <link rel="stylesheet" href="pageStyles/normalize.css">
+    <link rel="stylesheet" href="pageStyles/aboutUs.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>About Us</title>
 </head>
-<body>
-    <iframe class="iframeNavbar" src="navbar.html" frameborder="0"></iframe>
 
-    <div class="contenedor">
-        <div class="seccion centrar">
-            <h2 class="nombre ">Creators</h2>
-        </div>
-        <div class="tarjetas">
-            <div class="seccion centrar">
-                <img class = "fotos" src="images/Andres2.jpeg" alt="Andres Ortega">
-                <h2 class="nombre">Andres Camilo Ortega Muñoz</h2>
-            </div>
-            <div class="seccion centrar">
-                <img class = "fotos" src="images/Andres1.jpeg" alt="Andres Lopez">
-                <h2 class="nombre">Bryan Andres Lopez Palacios</h2>
+<body>
+    <!--NAVBAR-->
+    <nav id="navBar"></nav>
+    <!--CONTENIDO-->
+    <div class="contenedorPrincipal">
+        <div class="contenedorAboutUs">
+
+            <h2 class="tituloAboutUs">Creators</h2>
+
+            <div class="tarjetasAboutUs centrarAboutUs">
+                <div class="seccionAboutUs">
+                    <img class="fotosAboutUs" src="images/Andres2.jpeg" alt="Andres Ortega">
+                    <h2 class="letraAboutUs">Andres Camilo Ortega Muñoz</h2>
+                </div>
+                <div class="seccionAboutUs">
+                    <img class="fotosAboutUs" src="images/Andres1.jpeg" alt="Andres Lopez">
+                    <h2 class="letraAboutUs">Bryan Andres Lopez Palacios</h2>    
+                </div>
             </div>
         </div>
     </div>
-    <footer>
-        <iframe class="iframeFooter" src="footer.html" frameborder="0"></iframe>
-    </footer>
-    
+    <!--FOOTER-->
+    <footer id="footer"></footer>
+    <!--JS PARA AGREGAR LOS ELEMENTOS DENTRO DEL DOCUMENTO ACTUAL-->
+    <script src="pageScripts/AddElements.js"></script>
 </body>
+
 </html>
