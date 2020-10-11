@@ -139,6 +139,7 @@ body{
 .characterContainer{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
@@ -147,6 +148,11 @@ body{
     margin: 30px;
     width: 25%;
     height: 25%;
+}
+
+.controls{
+    width: 50%;
+    height: 50%;
 }
 
 .characterDescriptionContainer{
@@ -167,12 +173,10 @@ body{
         height: 25%;
     }
 
-    .characterDescriptionContainer{
-    }
 }
 
 @media screen and ( max-width: 1024px ){
-    .characterImage{
+    .characterImage, .controls{
         min-width: 200px;
         min-height: 200px;
     }
@@ -189,13 +193,14 @@ body{
         flex-direction: column;
  
     }
-    .characterImage{
+    .characterImage, .controls{
         min-width: 200px;
         min-height: 200px;
     }
 
     .characterDescriptionContainer{
-        max-width: 250px;
+        max-width: 300px;
+        transform: skew(0,0);
     }
     .cover{
         width: 98%;
