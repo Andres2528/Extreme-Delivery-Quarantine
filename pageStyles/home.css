@@ -10,7 +10,11 @@
         position: fixed;
         width: 100%;
         top: 0%;
+        z-index: 1000;
     }    
+    .mainContainer{
+        margin-top: 100px;
+    }
 }
 
 @media screen and ( max-width: 519px ){
@@ -18,7 +22,11 @@
         position: relative;
         width: 100%;
         top: 0%;
-    }    
+        z-index: 1000;
+    }   
+    .mainContainer{
+        margin-top: 0;
+    } 
 }
 /* ------------------------------------------------------------------------------------------------------------*/
 
@@ -28,7 +36,6 @@ body{
 
 /* BAJAR EL CONTENEDOR PRINCIPAL PARA QUE NO LO OCULTE EL NAVBAR*/
 .mainContainer{
-    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,16 +139,24 @@ body{
 .characterContainer{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .characterImage{
-    height: 500px;
     margin: 30px;
+    width: 25%;
+    height: 25%;
+}
+
+.controls{
+    width: 50%;
+    height: 50%;
 }
 
 .characterDescriptionContainer{
+    margin: 20px;
     background-color: #fff;
     transform: skew(-10deg, 0 );
     border-radius: 10px;
@@ -151,4 +166,46 @@ body{
 .characterDescriptionContainer h2, .characterDescriptionContainer p{
     color: #000;
 }
+
+@media screen and ( min-width: 1000px ){
+    .characterImage{
+        width: 25%;
+        height: 25%;
+    }
+
+}
+
+@media screen and ( max-width: 1024px ){
+    .characterImage, .controls{
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .characterDescriptionContainer{
+        max-width: 300px;
+    }
+}
+
+@media screen and ( max-width:700px ){
+    .characterContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+ 
+    }
+    .characterImage, .controls{
+        min-width: 200px;
+        min-height: 200px;
+    }
+
+    .characterDescriptionContainer{
+        max-width: 300px;
+        transform: skew(0,0);
+    }
+    .cover{
+        width: 98%;
+        height: 200px;
+    }
+}
+
 
