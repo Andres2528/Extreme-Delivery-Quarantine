@@ -1,4 +1,4 @@
 
 export const USER_STATE = {
-    isOnline: false
+    isOnline: JSON.parse(localStorage.getItem('isOnline'))
 }

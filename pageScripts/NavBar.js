@@ -13,15 +13,14 @@ export class NavBar{
     }
 
     detectUserState(){
-        console.log(JSON.parse(localStorage.getItem('myStorage')));
-        // if( USER_STATE.isOnline == true ){
-        //     this.usContainer.style.display = "flex";
-        //     this.loginButton.style.display = "none";
-        // }
-        // else{
-        //     this.usContainer.style.display = "none";
-        //     this.loginButton.style.display = "block"; 
-        // }
+        if( USER_STATE.isOnline == true ){
+            this.usContainer.style.display = "flex";
+            this.loginButton.style.display = "none";
+        }
+        else{
+            this.usContainer.style.display = "none";
+            this.loginButton.style.display = "block"; 
+        }
     }
 
     showLogin(){
@@ -35,6 +34,7 @@ export class NavBar{
         this.logoutButton.addEventListener("click", () =>{
             this.usContainer.style.display = "none";
             this.loginButton.style.display = "block";
+            let isOnline = localStorage.setItem('isOnline', false);
         }, false);
     }
 }

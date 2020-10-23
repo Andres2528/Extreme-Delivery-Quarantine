@@ -1,4 +1,5 @@
 import { FEMALE_AVATARS, MALE_AVATARS } from "./Avatars.js";
+import { User, USERS } from "./Users.js";
 
 export class Register {
     constructor() {
@@ -15,7 +16,6 @@ export class Register {
         this.registerImage.src = "../images/avatars/"+MALE_AVATARS[0];
         this.changeAvatarType();
        this.selectAvatar();
-       
     }
 
     changeAvatarType(){
@@ -77,3 +77,5 @@ export class Register {
 }
 
 let register = new Register();
+let user = new User("andreslp08@hotmail.com", "andreslp08", "a", "l", 23, 12345);
+console.log(USERS.length);
