@@ -88,13 +88,19 @@ body{
     height: 500px;
     margin: 30px;
     transform-style: preserve-3d;
+<<<<<<< HEAD
     transition: 2s;
+=======
+    transition: .8s;
+    border-radius: 10px;
+>>>>>>> master
 }
 
 .tarjetaAboutUs:hover{
     cursor: pointer;
     transform: rotateY(180deg);
     box-shadow: 0 0 5px 3px rgba(255, 255, 255, .3);
+<<<<<<< HEAD
 }
 
 .ladoAboutUs{
@@ -123,7 +129,39 @@ p{
     font-size: 25px;
     color: #fff;
     margin: 10px;
+=======
+>>>>>>> master
 }
+
+.ladoAboutUs{
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute; 
+    border-radius: 10px;
+}
+
+.atrasAboutUs{
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .3);
+    transition: box-shadow .2s ease-in-out;
+    transform: rotateY(180deg);
+}
+
+.atrasAboutUs p {
+    font-family: "Comfortaa", cursive;
+    font-size: 25px;
+    margin: 15px;
+    color: #fff;
+}
+
+.frenteAboutUs{
+    background-color: rgb(18, 18, 18);
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, .3);
+    transition: box-shadow .2s ease-in-out;
+}
+
+
 
 .fotosAboutUs{  
     border-width: 1px;

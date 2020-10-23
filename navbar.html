@@ -20,15 +20,17 @@
                 </nav>
             </div>
             <div class="seccion3 centrarV">
-                <!-- <button class="logInBtn" id="logInBtn">Iniciar sesión</button> -->
-                 <div class="usContainer centrarV">
-                    <img class="avatar" src="images/user.png" alt="avatar">
-                    <h2 class="avatarName">Usuario</h2>
+                <button class="logInBtn" id="logInBtn">Iniciar sesión</button>
+                 <div id ="usContainer" class="usContainer centrarV" style="display: none;">
+                    <img id="avatar" class="avatar" src="images/user.png" alt="avatar">
+                    <h2 id="avatarName" class="avatarName">Usuario</h2>
                     <ul class="userOptionsNav">
-                        <li>Cerrar sesión</li>
+                        <li id="logoutButton">Cerrar sesión</li>
                     </ul>
                 </div>
             </div>
         </div>
+        <!--JS-->
+        <script src="pageScripts/NavBar.js" type="module"></script>
     </body>
 </html>
