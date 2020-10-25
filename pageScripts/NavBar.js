@@ -13,20 +13,24 @@ export class NavBar{
     }
 
     detectUserState(){
-        console.log(JSON.parse(localStorage.getItem('myStorage')));
-        // if( USER_STATE.isOnline == true ){
-        //     this.usContainer.style.display = "flex";
-        //     this.loginButton.style.display = "none";
-        // }
-        // else{
-        //     this.usContainer.style.display = "none";
-        //     this.loginButton.style.display = "block"; 
-        // }
+        if( USER_STATE.isOnline == true ){
+            this.usContainer.style.display = "flex";
+            this.loginButton.style.display = "none";
+            if( USER_STATE.userOnline != null &&USER_STATE.userOnline != undefined){
+               this.avatarName.innerHTML = USER_STATE.userOnline.user;
+               this.avatar.src = USER_STATE.userOnline.avatarPath;
+            }
+  
+        }
+        else{
+            this.usContainer.style.display = "none";
+            this.loginButton.style.display = "block"; 
+        }
     }
 
     showLogin(){
         this.loginButton.addEventListener("click", (e) =>{
-            window.open("../login.html", "_self");
+            window.location.href = "login.html";
             return;
         }, false);
     }
@@ -35,6 +39,8 @@ export class NavBar{
         this.logoutButton.addEventListener("click", () =>{
             this.usContainer.style.display = "none";
             this.loginButton.style.display = "block";
+            let isOnline = localStorage.setItem('isOnline', false);
+            let userOnline = localStorage.setItem('userOnline', null);
         }, false);
     }
 }
