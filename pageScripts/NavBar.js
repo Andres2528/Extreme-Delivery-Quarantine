@@ -41,6 +41,7 @@ export class NavBar{
             this.loginButton.style.display = "block";
             let isOnline = localStorage.setItem('isOnline', false);
             let userOnline = localStorage.setItem('userOnline', null);
+            window.location.reload();
         }, false);
     }
 }
