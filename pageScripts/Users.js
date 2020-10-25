@@ -1,8 +1,10 @@
+import { MALE_AVATARS } from "./Avatars.js";
 
 export const USERS = [];
 
 export class User{
-    constructor(email, user, firstNames, lastNames, age, password){
+    constructor( avatarPath, email, user, firstNames, lastNames, age, password){
+        this.avatarPath = avatarPath;
         this.email = email;
         this.user = user;
         this.firstNames = firstNames;
@@ -22,4 +24,7 @@ export class User{
         USERS.push(this);
     }
 }
+
+let AndresLopez = new User( "images/avatars/"+MALE_AVATARS[2],"balopez@unipanamericana.edu.co", "Andrés López", "Bryan Andrés", "López palacios", 23, "12345");
+let AndresOrtega = new User( "images/avatars/"+MALE_AVATARS[2],"acortega@unipanamericana.edu.co", "Andres Ortega", "Andres Camilo", "Ortega Muñoz", 19, "12345");
 

@@ -52,6 +52,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 20px;
     width: 450px;
     height: 550px;
     background-color: rgb(18, 18, 18);
@@ -81,6 +82,7 @@ body{
     color: #fff;
     font-size: 30px;
     font-family: "Bebas Neue", cursive;
+    text-align: center;
 }
 .loginImage{
     width: 125px;
@@ -133,18 +135,20 @@ body{
 
 @media screen and ( max-width: 420px){
     .loginContainer{
-        width: 250px;
-        height: 400px;
-    }
-
-    .loginImage{
-        width: 80px;
-        height: 80px;
-    }
-    .loginTitle{
-        font-size: 25px;
+        width: 300px;
+        transform: skew(0,0);
     }
     .textfield{
         width: 90%;
     }
+
+@keyframes m{
+    from{
+      transform: translateX(-200%);  
+    }
+    to{
+        transform: translateX(0); 
+
+    }
+}
 }
