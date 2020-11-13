@@ -170,6 +170,13 @@ justify-content: center;
     background-color:rgb(35, 35, 35); 
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+
 .inputButtonregister{
     margin: 10px;
     padding: 10px;
