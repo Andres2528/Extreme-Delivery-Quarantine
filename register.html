@@ -22,15 +22,15 @@
                 <button class="avatarType" title="Avatares para hombres" id="avatarType" ></button>
                 <button class="selectAvatarButton" id="selectAvatarButtonRight">></button>
             </div>
-            <h2 class="registerTitle">Nueva cuenta</h2>
-            <form class="inputs">
-                <input class="textfield" id="mailTextField" type="email" placeholder="Correo electronico"required>
-                <input class="textfield" id="nickNameTextField" type="text" placeholder="Usuario"required>
-                <input class="textfield" id="namesTextField" type="text" placeholder="Nombres"required>
-                <input class="textfield" id="ApellidosTextField" type="text" placeholder="Apellidos"required>
-                <input class="textfield" id="ageTextField" type="text" placeholder="Edad"required>
-                <input class="textfield" id="passwordTextField" type="password" placeholder="Contraseña"required>
-                <input class="inputButtonregister" id="inputButtonregister" type="submit" value="Registrarse">
+            <h2 class="registerTitle" id="registerTitle">Nueva cuenta</h2>
+            <form class="inputs" id="registerForm">
+                <input class="textfield" id="emailTextField" type="email" placeholder="Correo electronico"required>
+                <input class="textfield" id="userTextField" type="text"  placeholder="Usuario"required>
+                <input class="textfield" id="firstNamesTextField" type="text" placeholder="Nombres"required>
+                <input class="textfield" id="lastNamesTextField" type="text" placeholder="Apellidos"required>
+                <input class="textfield" id="ageTextField" type="number" placeholder="Edad"required>
+                <input class="textfield" id="passwordTextField" type="password"  minlength="6"  placeholder="Contraseña"required>
+                <input class="inputButtonregister" id="inputButtonregister"  type="submit" value="Registrarse">
             </form>
           
         </div>
